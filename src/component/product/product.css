@@ -1,0 +1,18 @@
+@media (max-width: 380px) {
+    .product {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        height: 100vh;
+        overflow: auto;
+    }
+    .product .product-item{
+        width: 100%;
+    }
+    .product .product-item .rounded-md{
+        margin: 0 auto;
+    }
+    .product .product-item .text-slate-300{
+        padding-left: 20px;
+    }
+ }

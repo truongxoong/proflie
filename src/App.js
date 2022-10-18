@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import 'antd/dist/antd.css';
+import { Route, Routes } from 'react-router-dom';
+import Contact from './component/contact';
+import Experience from './component/experience';
+import Slider from './component/slider';
+import HomePage from './component/home';
+import Skill from './component/skill';
+import Product from './component/product';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app w-[100vw] h-[100vh] bg-[#414244] flex justify-center items-center'>
+      <div className='w-[80vw] h-[70vh] bg-[#343539] flex py-5 rounded-xl'>
+        <div className='w-[15%] border-r-2'>
+          <Slider />
+        </div>
+        <div className='p-4 w-[85%] content'>
+          <Routes>
+            <Route path='/home' element={<HomePage />} />
+            <Route path='/contact' element={<Contact />} />
+            <Route path='/experience' element={<Experience />} />
+            <Route path='/skill' element={<Skill />} />
+            <Route path='/product' element={<Product />} />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
 }

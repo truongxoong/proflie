@@ -1,0 +1,9 @@
+@media (max-width: 380px) {
+    .skill {
+        margin: 20px;
+    }
+    .skill .rounded-md {
+        font-size: 16px;
+    }
+   
+ }

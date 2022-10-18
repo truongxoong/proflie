@@ -1,0 +1,12 @@
+
+@media (max-width: 380px) {
+    .sliderCss  {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px 5px;
+    }
+    .sliderCss .icon {
+        display: none
+    }
+}

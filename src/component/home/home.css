@@ -1,0 +1,12 @@
+@media (max-width: 380px) {
+    .home .rounded-full{
+        width: 250px;
+        height: 250px;
+    }
+    .home .text-2xl{
+        font-size: 18px;
+    }
+    .home .text-lg{
+        font-size: 15px;
+    }
+}
