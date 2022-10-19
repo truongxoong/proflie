@@ -1,11 +1,11 @@
 import 'antd/dist/antd.css';
 import { Route, Routes } from 'react-router-dom';
 import Contact from './component/contact';
-import Experience from './component/experience';
 import Slider from './component/slider';
 import HomePage from './component/home';
 import Skill from './component/skill';
 import Product from './component/product';
+import About from './component/experience';
 import './App.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
           <Routes>
             <Route path='/home' element={<HomePage />} />
             <Route path='/contact' element={<Contact />} />
-            <Route path='/experience' element={<Experience />} />
+            <Route path='/about' element={<About />} />
             <Route path='/skill' element={<Skill />} />
             <Route path='/product' element={<Product />} />
           </Routes>

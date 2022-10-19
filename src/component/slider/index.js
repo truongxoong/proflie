@@ -1,4 +1,4 @@
-import { StarOutlined, ContactsOutlined , ExperimentOutlined , HomeOutlined } from '@ant-design/icons';
+import { UserOutlined , ContactsOutlined , ExperimentOutlined , HomeOutlined } from '@ant-design/icons';
 import { NavLink } from 'react-router-dom';
 import './slider.css'
 const sliderMenu = [
@@ -8,14 +8,9 @@ const sliderMenu = [
         to: '/home'
     },
     {
-        icon: <ContactsOutlined  />,
-        title: 'Contact',
-        to: '/contact'
-    },
-    {
-        icon: <ExperimentOutlined  />,
-        title: 'Experience',
-        to: '/experience'
+        icon: <UserOutlined  />,
+        title: 'About Me',
+        to: '/about'
     },
     {
         icon: <ExperimentOutlined  />,
@@ -26,6 +21,11 @@ const sliderMenu = [
         icon: <ExperimentOutlined  />,
         title: 'Product',
         to: '/product'
+    },
+    {
+        icon: <ContactsOutlined  />,
+        title: 'Contact',
+        to: '/contact'
     },
 ]
 let activeStyle = {

@@ -1,41 +1,57 @@
 import './contact.css'
-const contact = [
-    {
-        key: 'Name',
-        value: 'Cù Văn Trường'
-    },
-    {
-        key: 'Date',
-        value: '04/02/2000'
-    },
-    {
-        key: 'Phone',
-        value: '0388513292'
-    },
-    {
-        key: 'Gmail',
-        value: 'truongxoongx3@gmail.com'
-    },
-    {
-        key: 'Address',
-        value: '224 đường bưởi'
-    },
-    {
-        key: 'Student',
-        value: 'Học viện kỹ thuật mật mã'
-    },
-]
+import { Button, Checkbox, Form, Input } from 'antd';
+const {TextArea} = Input
+
 function Contact() {
-    return <div className="flex contact">
-        <div>
-        {
-            contact.map((item) => (
-                <div key={item.key} className="flex text-xl p-3 bg-slate-500 mb-1 rounded-md">
-                    <div className="text-[#1ab394]">{item.key}: </div>
-                    <div className="pl-3 text-white font-bold">{item.value}</div>
-                </div>
-            ))
-        }
+    return <div className="contact">
+        <div className='text-center text-[40px] font-bold text-[#1ab394]'>Contact</div>
+        <div className='grid grid-cols-2 gap-12 mx-10 mt-12'>
+            <div className='form_contact'>
+                <Form>
+                    <Form.Item
+                    className='form_input'
+                    name= 'name'
+                    rules={[
+                        {
+                            required: true,
+                            message: 'Trường bắt buộc'
+                        }
+                    ]}
+                    >
+                        <Input placeholder='Full Name' className='text-white'/>
+                    </Form.Item>
+                    <Form.Item
+                    className='form_input'
+                    name='email'
+                    rules={[
+                        {
+                            required: true,
+                            message: 'Trường bắt buộc'
+                        }
+                    ]}
+                    >
+                        <Input placeholder='Address Email' className='text-white'/>
+                    </Form.Item>
+                    <Form.Item
+                    className='form_input'
+                    name='message'
+                    rules={[
+                        {
+                            required: true,
+                            message: 'Trường bắt buộc'
+                        }
+                    ]}
+                    >
+                        <TextArea placeholder='Message' rows={4}/>
+                    </Form.Item>
+                    <Form.Item>
+                        <Button type='primary' htmlType='submit'>Sent Massage</Button>
+                    </Form.Item>
+                </Form>
+            </div>
+            <div className='w-full h-[500px] bg-slate-300 rounded-xl overflow-hidden'>
+                <img className='w-full h-full object-cover' src='https://images.foody.vn/res/g69/681881/map/s960/foody-map-681881_21-0362310772275_105-8078010007739.jpg' />
+            </div>
         </div>
     </div>
 }

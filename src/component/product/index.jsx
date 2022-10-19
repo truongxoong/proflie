@@ -22,7 +22,7 @@ function Product() {
             <div className="w-[250px] h-[300px] overflow-hidden rounded-md">
                 <img className="h-full w-full object-cover" src="https://cdn.dribbble.com/users/3577980/screenshots/15163271/media/38c4ddee358cbd6f6091200232f9814c.png?compress=1&resize=400x300" />
             </div>
-            <div className="text-center pt-3 text-lg text-white font-semibold">Profile</div>
+            <div className="text-center pt-3 text-lg text-white font-semibold">Quản lý nhà hàng</div>
             <div className="text-slate-300"><span className="text-[#1ab394]">Mô tả chức năng:</span>  Mới hoàn thành được phần User: thêm, xóa, sửa nhân viên.</div>
             <div className="text-slate-300"><span className="text-[#1ab394]">Công nghệ sử dụng:</span> HTML, Tailwind, Reactjs, React Router, Redux toolkit, Firebase</div>
             <div className="text-white text-center">Link: <a href="https://restaurant-manager-f8bca.web.app/">Nhấn để xem</a></div>
