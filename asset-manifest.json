@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/proflie/static/css/main.08c110ea.css",
+    "main.js": "/proflie/static/js/main.e7627dd7.js",
+    "static/js/787.d4212a05.chunk.js": "/proflie/static/js/787.d4212a05.chunk.js",
+    "index.html": "/proflie/index.html",
+    "main.08c110ea.css.map": "/proflie/static/css/main.08c110ea.css.map",
+    "main.e7627dd7.js.map": "/proflie/static/js/main.e7627dd7.js.map",
+    "787.d4212a05.chunk.js.map": "/proflie/static/js/787.d4212a05.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08c110ea.css",
+    "static/js/main.e7627dd7.js"
+  ]
+}
